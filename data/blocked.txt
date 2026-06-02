@@ -1,0 +1,10 @@
+# AlphaWord Blocks — corpus blocklist (ships empty by design).
+#
+# One entry per line: any corpus token listed here is dropped before the
+# solver runs. Entries are normalized the same way corpus words are (see
+# util::regularize_name), so write them as lowercase letters with no spaces
+# or punctuation, e.g. a normalized word ("foo") or a normalized phrase
+# ("foobarbaz"). Blank lines and lines starting with '#' are ignored.
+#
+# This file is intentionally empty: the project does not ship any opinionated
+# word list. Add your own terms below to exclude them from the spellable corpus.

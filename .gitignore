@@ -1,0 +1,18 @@
+# Rust build output
+/target
+
+# Private/local assets (not for publication)
+mock.png
+
+# Corpora fetched by download_scripts/ (not redistributed; see DATA_SOURCES.md)
+download_scripts/eng_sentences.tsv
+download_scripts/eng_sentences.tsv.bz2
+download_scripts/tatoeba_clean.txt
+download_scripts/words_alpha.txt
+download_scripts/enwiktionary-latest-all-titles-in-ns0
+download_scripts/enwiktionary-latest-all-titles-in-ns0.gz
+download_scripts/enwiki-latest-pages-articles.xml.bz2
+download_scripts/wiki_text/
+download_scripts/word.list
+download_scripts/scowl-*/
+download_scripts/scowl-*.tar.gz

@@ -1,0 +1,88 @@
+# AlphaWord Blocks — runtime alphabet selection (presets, packages, options)
+# Copyright (C) 2025- Svetlin Tassev
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+# You can combine presets and packages. Later entries don't need to repeat earlier ones.
+presets = [
+ ##"pan_western_caps",
+ #"greek_monotonic_full",
+ ##"cyrillic_ru_full",
+ # "cyrillic_pan_slavic",
+ #"hebrew",
+ #"georgian_mkhedruli",
+ #"cherokee",
+ #"kana_full",
+ #"everything"
+]
+
+# Add or remove individual packages here (names must match glyph_config::package_by_name)
+packages = [
+  # === Latin base ===
+  #"latin.ascii.upper",
+  "latin.ascii.lower",
+  #"latin.ascii.lower",
+  #"cyr.bg.lower"
+
+  ## === Latin digraphs & ligatures ===
+  #"latin.digraphs.all",
+  ##"latin.ligatures.upper",
+  ##"latin.ligatures.lower",
+  #
+  ## === Pīnyīn vowels (incl. Ü/ü) ===
+  #"latin.pinyin.upper",
+  #"latin.pinyin.lower",
+  #
+  ## === Romance / Iberian (keep these diacritics as real glyphs) ===
+  #"spanish.core.upper", "spanish.core.lower",
+  #"french.accents.upper", "french.accents.lower",       # é, è, ê, ë, …
+  #"italian.core.upper", "italian.core.lower",           # ò, ù, ì, …
+  #"portuguese.core.upper", "portuguese.core.lower",     # ã, õ, á, é, í, ó, ú
+  #
+  ## === Nordic (also avoids Ø/ø RHS warns if you ever drop diacritics) ===
+  #"danish_norwegian.upper", "danish_norwegian.lower",
+  #"swedish.upper", "swedish.lower",
+  #"icelandic.upper", "icelandic.lower",                 # þ, ð, …
+  #
+  ## === Baltic ===
+  #"latvian.upper", "latvian.lower",                     # ā ē ī ū (helps with pīnyīn overlap)
+  #
+  ## === Central / Eastern Europe (keep these diacritics as real glyphs) ===
+  #"czech.upper", "czech.lower",                         # ě
+  #"hungarian.upper", "hungarian.lower",
+  #"polish.upper", "polish.lower",                       # ć, ę, ł, ń, ó, ś, ź, ż
+  #"romanian.upper", "romanian.lower",                   # ă, â, î, ș, ț
+  #
+  ## === Turkic (Latin) ===
+  #"turkish_azeri.upper", "turkish_azeri.lower",         # ı, İ, ğ, ş, …
+  #"maltese.upper","maltese.lower",
+  #"lithuanian.upper","lithuanian.lower",
+  #"arabic.core",
+  #"persian_urdu.extras",
+  #"tamil.core",
+  #"latin.ipa.core"
+]
+
+
+[options]
+# "CapsOnly" | "UpperLower" | "LowerOnly"
+case-mode = "LowerOnly"
+
+# If true, add rewrite rules Á→A, Ç→C, etc., and you can skip manufacturing those sorts.
+drop-diacritics = true
+# If false, add rewrite rules œ→oe, æ→ae, ß→ss, ﬀ→ff, …
+keep-ligatures = false
+language-specific-bridges=true
+signage-translits=true
+rewrite-with-typographic-ligatures = false

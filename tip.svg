@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="48" viewBox="0 0 200 48" role="img" aria-label="Leave a tip">
+  <defs>
+    <linearGradient id="b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ec6a6a"/>
+      <stop offset="1" stop-color="#d6453f"/>
+    </linearGradient>
+    <filter id="s" x="-12%" y="-12%" width="124%" height="140%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.4" flood-color="#000" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <rect x="2" y="2" width="196" height="42" rx="9" fill="url(#b)" stroke="#bd3a35" stroke-width="1" filter="url(#s)"/>
+  <text x="100" y="25" font-family="DejaVu Sans, Verdana, sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle" dominant-baseline="central">&#9829;  Leave a tip</text>
+</svg>
