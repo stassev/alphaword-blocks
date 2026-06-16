@@ -33,10 +33,17 @@ specific to English.
 ## Fun games to play
 
 The instruction sheet up top shows six ways to play — spell any word, photo
-messages, floor signs, long sentences, crossword, and a story relay. Here are
+messages, floor signs, long sentences, crossword, and a story relay. Here is another example of a fun game to play starting with any seed word:  
+
+<a href="endcap.png"><img src="endcap.png" width="600" alt="Word Chain"></a>
+
+
+
+And here are
 nine more, one game per card. Everything shown on a card can be laid out at the
 same time with the single 26-cube set; the Word Chain even uses all twenty-six
 at once.
+
 
 <table>
   <tr>
